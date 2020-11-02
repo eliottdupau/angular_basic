@@ -1,0 +1,9 @@
+<div id="main_container">
+    <div id="input_container">
+        <p *ngFor="let input of inputs" class="input">{{ input }}</p>
+    </div>
+    <div id="keybord_container">
+        <button *ngFor="let option of options" class="input_button" (click)="updateInput($event)">{{ option }}</button>
+    </div>
+    <button id="validate" [disabled]="isDisabled" (click)="displayInput()">Validate</button>
+</div>
