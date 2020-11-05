@@ -1,0 +1,12 @@
+<div class="player-container" *ngFor="let player of players; let i=index">
+    <input placeholder="Name" type="text" [(ngModel)]="player.lastname">
+    <input placeholder="First name" type="text" [(ngModel)]="player.firstname">
+    <input placeholder="Age" type="number" [(ngModel)]="player.age">
+
+    <select [(ngModel)]="player.position">
+        <option *ngFor="let position of positions" [value]="position">{{ position }}</option>
+    </select>
+    
+    <button (click)="onEdit(i)">Edit</button>
+    <button (click)="onDelete(i)">Delete</button>
+</div>

@@ -1,0 +1,17 @@
+.player-container {
+    display: flex;
+    margin: 10px 0;
+}
+
+input {
+    margin: 0 10px;
+}
+
+select {
+    margin: 0 10px;
+}
+
+button {
+    margin: 0 10px;
+    width: 100px;
+}

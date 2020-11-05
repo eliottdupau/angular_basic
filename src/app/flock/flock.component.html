@@ -1,0 +1,8 @@
+<section>
+    <h3>Flocking</h3>
+    <span class="flock selected" (click)="onUnFlock()">No flock</span>
+    <span class="flock" (click)="onFlock()">Players</span>
+    <select [hidden]="isHidden">
+        <option *ngFor="let p of players">{{ p }}</option>
+    </select>
+</section>
